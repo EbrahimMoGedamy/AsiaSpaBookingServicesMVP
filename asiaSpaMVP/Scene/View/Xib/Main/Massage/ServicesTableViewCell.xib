@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+        <array key="Cairo-SemiBold.ttf">
+            <string>Cairo-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ServicesTableViewCell" rowHeight="400" id="KGk-i7-Jjw" customClass="ServicesTableViewCell" customModule="asiaSpaMVP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="450" height="344"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="450" height="344"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Olx-6C-pSU">
+                        <rect key="frame" x="20" y="45" width="410" height="160"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="160" id="0i4-0N-oeV"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lKb-3q-sE3">
+                        <rect key="frame" x="20" y="213" width="10" height="10"/>
+                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="D4a-nX-86L"/>
+                            <constraint firstAttribute="width" constant="10" id="fEF-hp-f9M"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMc-b5-QlD" customClass="LocalizableButton" customModule="asiaSpaMVP" customModuleProvider="target">
+                        <rect key="frame" x="20" y="314" width="100" height="25"/>
+                        <color key="backgroundColor" red="0.074509803920000006" green="0.33136100759999998" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="3QY-kz-lzR"/>
+                            <constraint firstAttribute="width" constant="100" id="xXr-7H-c91"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                        <state key="normal" title="Select">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="إختيار"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="englishText" value="Select"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="selectBuTpped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="MvX-QR-Enr"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D0k-S5-Tit">
+                        <rect key="frame" x="135" y="315" width="63" height="23"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJ8-Ot-jiK">
+                                <rect key="frame" x="3" y="3" width="50" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Zar-0F-6fV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="TJ8-Ot-jiK" secondAttribute="trailing" constant="10" id="0XT-eR-00e"/>
+                            <constraint firstAttribute="bottom" secondItem="TJ8-Ot-jiK" secondAttribute="bottom" constant="3" id="Mn8-kX-D71"/>
+                            <constraint firstItem="TJ8-Ot-jiK" firstAttribute="leading" secondItem="D0k-S5-Tit" secondAttribute="leading" constant="3" id="NEe-8C-6QE"/>
+                            <constraint firstItem="TJ8-Ot-jiK" firstAttribute="top" secondItem="D0k-S5-Tit" secondAttribute="top" constant="3" id="iVf-T8-0LL"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAT included" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePw-1B-qlL" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                        <rect key="frame" x="200" y="320.5" width="58" height="12"/>
+                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="10"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="شامل ضريبة القيمة المضافة"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Id-hf-xum" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                        <rect key="frame" x="5" y="0.0" width="440" height="40"/>
+                        <color key="backgroundColor" red="0.074509803920000006" green="0.33136100759999998" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="aVi-Qg-SpZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14B-Ol-38G" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                        <rect key="frame" x="20" y="228" width="415" height="81"/>
+                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="14B-Ol-38G" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="5hh-FL-NRI"/>
+                    <constraint firstAttribute="bottom" secondItem="cMc-b5-QlD" secondAttribute="bottom" constant="5" id="6hD-Fq-glv"/>
+                    <constraint firstItem="9Id-hf-xum" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="7lP-Ud-IzG"/>
+                    <constraint firstItem="14B-Ol-38G" firstAttribute="bottom" secondItem="cMc-b5-QlD" secondAttribute="top" constant="-5" id="9tx-x6-Uzv"/>
+                    <constraint firstItem="9Id-hf-xum" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Ad5-eW-ckx"/>
+                    <constraint firstAttribute="trailing" secondItem="14B-Ol-38G" secondAttribute="trailing" constant="15" id="Maf-AL-PDm"/>
+                    <constraint firstAttribute="trailing" secondItem="Olx-6C-pSU" secondAttribute="trailing" constant="20" id="NRq-e3-Psc"/>
+                    <constraint firstAttribute="trailing" secondItem="9Id-hf-xum" secondAttribute="trailing" constant="5" id="XNn-gc-qNW"/>
+                    <constraint firstItem="Olx-6C-pSU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="YjZ-va-EDd"/>
+                    <constraint firstItem="D0k-S5-Tit" firstAttribute="centerY" secondItem="cMc-b5-QlD" secondAttribute="centerY" id="e8i-3s-GaT"/>
+                    <constraint firstItem="lKb-3q-sE3" firstAttribute="leading" secondItem="Olx-6C-pSU" secondAttribute="leading" id="jN1-NZ-R0l"/>
+                    <constraint firstItem="Olx-6C-pSU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="45" id="l2t-Z9-Uap"/>
+                    <constraint firstItem="ePw-1B-qlL" firstAttribute="leading" secondItem="D0k-S5-Tit" secondAttribute="trailing" constant="2" id="mNp-Hn-kop"/>
+                    <constraint firstItem="D0k-S5-Tit" firstAttribute="leading" secondItem="cMc-b5-QlD" secondAttribute="trailing" constant="15" id="mcp-Mo-xh9"/>
+                    <constraint firstItem="14B-Ol-38G" firstAttribute="top" secondItem="lKb-3q-sE3" secondAttribute="bottom" constant="5" id="nlT-fG-lQ0"/>
+                    <constraint firstItem="lKb-3q-sE3" firstAttribute="top" secondItem="Olx-6C-pSU" secondAttribute="bottom" constant="8" id="spO-eC-2uI"/>
+                    <constraint firstItem="ePw-1B-qlL" firstAttribute="centerY" secondItem="cMc-b5-QlD" secondAttribute="centerY" id="v5n-bG-ky0"/>
+                    <constraint firstItem="cMc-b5-QlD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="wyE-T3-yed"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addedValueLbl" destination="ePw-1B-qlL" id="6z8-Hl-G0J"/>
+                <outlet property="descriptionTxt" destination="14B-Ol-38G" id="yj2-dc-bVo"/>
+                <outlet property="priceLbl" destination="TJ8-Ot-jiK" id="kdy-V9-dLs"/>
+                <outlet property="priceView" destination="D0k-S5-Tit" id="wAi-vn-N7o"/>
+                <outlet property="roundView" destination="lKb-3q-sE3" id="ndD-Y2-doR"/>
+                <outlet property="selectBu" destination="cMc-b5-QlD" id="Llc-4o-94c"/>
+                <outlet property="serviceImage" destination="Olx-6C-pSU" id="ziI-80-ExJ"/>
+                <outlet property="titleLbl" destination="9Id-hf-xum" id="sQ1-aS-VdN"/>
+            </connections>
+            <point key="canvasLocation" x="72.463768115942031" y="72.321428571428569"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="14B-Ol-38G">
+            <size key="intrinsicContentSize" width="29.5" height="14"/>
+        </designable>
+        <designable name="9Id-hf-xum">
+            <size key="intrinsicContentSize" width="37" height="18"/>
+        </designable>
+        <designable name="ePw-1B-qlL">
+            <size key="intrinsicContentSize" width="58" height="12"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

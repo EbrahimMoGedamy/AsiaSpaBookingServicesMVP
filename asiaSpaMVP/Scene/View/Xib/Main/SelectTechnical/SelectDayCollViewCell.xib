@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SelectDayCollViewCell" id="0rO-7a-OhJ" customClass="SelectDayCollViewCell" customModule="asiaSpaMVP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="70" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="DUF-Ku-yeJ">
+                <rect key="frame" x="0.0" y="0.0" width="70" height="55"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QoE-o6-05F" userLabel="day" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                        <rect key="frame" x="3" y="3" width="64" height="27.5"/>
+                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvo-kY-zqA" userLabel="date" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                        <rect key="frame" x="3" y="24.5" width="64" height="27.5"/>
+                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="kvo-kY-zqA" secondAttribute="bottom" constant="3" id="2Hh-ta-PTg"/>
+                    <constraint firstItem="QoE-o6-05F" firstAttribute="leading" secondItem="DUF-Ku-yeJ" secondAttribute="leading" constant="3" id="B63-D3-WIv"/>
+                    <constraint firstAttribute="trailing" secondItem="QoE-o6-05F" secondAttribute="trailing" constant="3" id="H3m-Xi-ILL"/>
+                    <constraint firstAttribute="trailing" secondItem="kvo-kY-zqA" secondAttribute="trailing" constant="3" id="IfT-xW-kQ4"/>
+                    <constraint firstItem="QoE-o6-05F" firstAttribute="height" secondItem="DUF-Ku-yeJ" secondAttribute="height" multiplier="0.5" id="b9L-qb-dBI"/>
+                    <constraint firstItem="QoE-o6-05F" firstAttribute="top" secondItem="DUF-Ku-yeJ" secondAttribute="top" constant="3" id="bWh-NG-ntA"/>
+                    <constraint firstItem="kvo-kY-zqA" firstAttribute="height" secondItem="DUF-Ku-yeJ" secondAttribute="height" multiplier="0.5" id="cFd-m3-MTK"/>
+                    <constraint firstItem="kvo-kY-zqA" firstAttribute="leading" secondItem="DUF-Ku-yeJ" secondAttribute="leading" constant="3" id="uFk-LW-BfU"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="55" height="64"/>
+            <connections>
+                <outlet property="dateLbl" destination="kvo-kY-zqA" id="dDU-tB-GNj"/>
+                <outlet property="dayLbl" destination="QoE-o6-05F" id="Ohu-VW-crb"/>
+            </connections>
+            <point key="canvasLocation" x="143.47826086956522" y="69.308035714285708"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="QoE-o6-05F">
+            <size key="intrinsicContentSize" width="34" height="29"/>
+        </designable>
+        <designable name="kvo-kY-zqA">
+            <size key="intrinsicContentSize" width="29.5" height="25"/>
+        </designable>
+    </designables>
+</document>

@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  asiaSpaMVP
+
+  Created by Ibrahim Mo Gedami on 06/12/2020.
+  Copyright © 2020 Ebrahim  Mo Gedamy. All rights reserved.
+*/
+"FailedAlert" = "العملية فشلت";
+"SuccessAlert" = "العملية نجحت";
+"Add another service" = "أضف خدمة آخري";
+"Confirm and pay" = "التأكيد والدفع";
+"Ok" = "أوافق";
+

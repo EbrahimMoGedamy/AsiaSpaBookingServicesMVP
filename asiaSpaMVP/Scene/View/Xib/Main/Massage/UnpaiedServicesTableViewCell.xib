@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="UnpaiedServicesTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="UnpaiedServicesTableViewCell" rowHeight="51" id="eYV-9a-kdU" customClass="UnpaiedServicesTableViewCell" customModule="asiaSpaMVP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="51"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eYV-9a-kdU" id="1Ma-f1-DaR">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="51"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ka0-Bf-hIU" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                        <rect key="frame" x="97" y="0.0" width="57.5" height="51"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vzj-xh-TQw">
+                        <rect key="frame" x="276.5" y="0.0" width="43.5" height="51"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6id-rX-aZF" customClass="LocalizableButton" customModule="asiaSpaMVP" customModuleProvider="target">
+                                <rect key="frame" x="4" y="15.5" width="35" height="20"/>
+                                <color key="backgroundColor" red="0.03594792795" green="0.35161537640000001" blue="0.31024760689999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="QS0-xz-wUX"/>
+                                    <constraint firstAttribute="height" constant="20" id="rqn-wu-hQl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="8"/>
+                                <state key="normal" title="Pay">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="payBuTapped:" destination="eYV-9a-kdU" eventType="touchUpInside" id="Tcs-24-Nbp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6id-rX-aZF" firstAttribute="centerY" secondItem="vzj-xh-TQw" secondAttribute="centerY" id="MUC-26-bxB"/>
+                            <constraint firstItem="6id-rX-aZF" firstAttribute="centerX" secondItem="vzj-xh-TQw" secondAttribute="centerX" id="huK-VK-LaW"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Technical" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YD5-Lo-qvu" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                        <rect key="frame" x="204.5" y="0.0" width="70" height="51"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Service Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPh-nA-MHp" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="96" height="51"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="7"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXu-TA-cE0" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                        <rect key="frame" x="155.5" y="0.0" width="48" height="51"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="tPh-nA-MHp" firstAttribute="top" secondItem="1Ma-f1-DaR" secondAttribute="top" id="24z-bM-yoX"/>
+                    <constraint firstAttribute="bottom" secondItem="ka0-Bf-hIU" secondAttribute="bottom" id="2E5-Em-iab"/>
+                    <constraint firstItem="YD5-Lo-qvu" firstAttribute="top" secondItem="1Ma-f1-DaR" secondAttribute="top" id="6tr-w7-OT9"/>
+                    <constraint firstAttribute="bottom" secondItem="YD5-Lo-qvu" secondAttribute="bottom" id="8KM-Pg-m62"/>
+                    <constraint firstItem="YD5-Lo-qvu" firstAttribute="leading" secondItem="tXu-TA-cE0" secondAttribute="trailing" constant="1" id="C4U-Dg-dac"/>
+                    <constraint firstAttribute="bottom" secondItem="tXu-TA-cE0" secondAttribute="bottom" id="HNw-FK-KlU"/>
+                    <constraint firstItem="vzj-xh-TQw" firstAttribute="top" secondItem="1Ma-f1-DaR" secondAttribute="top" id="NiP-4N-A2c"/>
+                    <constraint firstItem="ka0-Bf-hIU" firstAttribute="top" secondItem="1Ma-f1-DaR" secondAttribute="top" id="O96-kj-Fh1"/>
+                    <constraint firstItem="ka0-Bf-hIU" firstAttribute="width" secondItem="1Ma-f1-DaR" secondAttribute="width" multiplier="0.18" id="Sz2-wr-RB0"/>
+                    <constraint firstItem="vzj-xh-TQw" firstAttribute="width" secondItem="1Ma-f1-DaR" secondAttribute="width" multiplier="0.136" id="YQI-GM-aff"/>
+                    <constraint firstItem="tPh-nA-MHp" firstAttribute="leading" secondItem="1Ma-f1-DaR" secondAttribute="leading" id="a4w-4M-lpD"/>
+                    <constraint firstItem="tXu-TA-cE0" firstAttribute="width" secondItem="1Ma-f1-DaR" secondAttribute="width" multiplier="0.15" id="a8y-Wn-cUu"/>
+                    <constraint firstAttribute="bottom" secondItem="vzj-xh-TQw" secondAttribute="bottom" id="e2E-6y-Rku"/>
+                    <constraint firstAttribute="trailing" secondItem="vzj-xh-TQw" secondAttribute="trailing" id="fXm-X0-wpM"/>
+                    <constraint firstItem="YD5-Lo-qvu" firstAttribute="width" secondItem="1Ma-f1-DaR" secondAttribute="width" multiplier="0.21875" id="hg4-z9-79l"/>
+                    <constraint firstItem="tXu-TA-cE0" firstAttribute="leading" secondItem="ka0-Bf-hIU" secondAttribute="trailing" constant="1" id="oNa-IT-dSI"/>
+                    <constraint firstAttribute="bottom" secondItem="tPh-nA-MHp" secondAttribute="bottom" id="oTq-8N-0YV"/>
+                    <constraint firstItem="ka0-Bf-hIU" firstAttribute="leading" secondItem="tPh-nA-MHp" secondAttribute="trailing" constant="1" id="wZP-oD-Vvv"/>
+                    <constraint firstItem="tXu-TA-cE0" firstAttribute="top" secondItem="1Ma-f1-DaR" secondAttribute="top" id="yOT-4G-dYC"/>
+                    <constraint firstItem="tPh-nA-MHp" firstAttribute="width" secondItem="1Ma-f1-DaR" secondAttribute="width" multiplier="0.3" id="zir-rg-mME"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="ahr-bm-o5t"/>
+            <connections>
+                <outlet property="dateLbl" destination="ka0-Bf-hIU" id="8pD-HF-cZH"/>
+                <outlet property="payBu" destination="6id-rX-aZF" id="Kuf-17-Pkx"/>
+                <outlet property="serviceNameLbl" destination="tPh-nA-MHp" id="kcq-vo-boO"/>
+                <outlet property="technicalLbl" destination="YD5-Lo-qvu" id="vfR-8u-OJd"/>
+                <outlet property="timeLbl" destination="tXu-TA-cE0" id="e84-cK-8Dh"/>
+            </connections>
+            <point key="canvasLocation" x="196" y="78"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="YD5-Lo-qvu">
+            <size key="intrinsicContentSize" width="47" height="12"/>
+        </designable>
+        <designable name="ka0-Bf-hIU">
+            <size key="intrinsicContentSize" width="22" height="12"/>
+        </designable>
+        <designable name="tPh-nA-MHp">
+            <size key="intrinsicContentSize" width="51.5" height="9"/>
+        </designable>
+        <designable name="tXu-TA-cE0">
+            <size key="intrinsicContentSize" width="24.5" height="12"/>
+        </designable>
+    </designables>
+</document>

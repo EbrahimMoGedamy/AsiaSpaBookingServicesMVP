@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-SemiBold.ttf">
+            <string>Cairo-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectHomeTechVC" customModule="asiaSpaMVP" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Cx9-st-P7Q" id="GBs-6F-N1K"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Cx9-st-P7Q">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H4u-Sh-ErS">
+                    <rect key="frame" x="0.0" y="-50" width="414" height="50"/>
+                    <color key="backgroundColor" red="0.023529411760000001" green="0.34509803919999998" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="cAJ-bN-agG"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iV8-XE-Gp3">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y1h-yY-tN0">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="730"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oriental Massage" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfe-Pr-sbk" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                                    <rect key="frame" x="30" y="55.333333333333343" width="354" height="45"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="vFS-X1-Y5d"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
+                                    <color key="textColor" red="0.074509803920000006" green="0.3294117647" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="أورينتال مساج"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="englishText" value="Oriental Massage"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wAv-dg-xE2">
+                                    <rect key="frame" x="5" y="137.66666666666666" width="8" height="8"/>
+                                    <color key="backgroundColor" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="8" id="FzL-Ku-7gQ"/>
+                                        <constraint firstAttribute="height" constant="8" id="xaH-SI-VIe"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Day" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hin-oR-3be" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="130.33333333333334" width="255" height="23"/>
+                                    <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="12"/>
+                                    <color key="textColor" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="إختيار اليوم"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="M72-ZE-W7n">
+                                    <rect key="frame" x="15" y="161.33333333333334" width="384" height="120.00000000000003"/>
+                                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="120" id="0Ei-Do-41j"/>
+                                    </constraints>
+                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XLz-Cy-WNa">
+                                        <size key="itemSize" width="90" height="70"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                </collectionView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="71R-Gz-QFm">
+                                    <rect key="frame" x="8" y="145.66666666666669" width="2" height="155.66666666666669"/>
+                                    <color key="backgroundColor" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mg7-wq-hkx">
+                                    <rect key="frame" x="5" y="301.33333333333331" width="8" height="8"/>
+                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="8" id="r9C-qX-Y94"/>
+                                        <constraint firstAttribute="height" constant="8" id="xh6-2O-rLI"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Time" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4s-Nm-kYh" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="293.66666666666669" width="255" height="23"/>
+                                    <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="12"/>
+                                    <color key="textColor" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="إختيار الفني"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get extra discount at times" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdD-Is-UuZ" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                                    <rect key="frame" x="19.999999999999993" y="316.66666666666669" width="114.33333333333331" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="R1O-Uf-50H"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="10"/>
+                                    <color key="textColor" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="احصل علي خصم إضافي في بعض الاوقات"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="KKq-Q2-Q7W">
+                                    <rect key="frame" x="15" y="364.66666666666669" width="384" height="160.00000000000006"/>
+                                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="160" id="KbS-F5-bSU"/>
+                                    </constraints>
+                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xOv-Ud-4SL">
+                                        <size key="itemSize" width="80" height="60"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                </collectionView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Sg-yV-F2s">
+                                    <rect key="frame" x="5" y="539.66666666666663" width="8" height="8"/>
+                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="8" id="8OP-42-qdD"/>
+                                        <constraint firstAttribute="width" constant="8" id="XFU-bL-2mq"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select booking service after finishing time booking" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cbh-TF-p4k" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="518.66666666666663" width="255" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="K0f-fo-qHT"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="12"/>
+                                    <color key="textColor" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="إختيار الفني"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UTU-de-uFU">
+                                    <rect key="frame" x="8" y="309.33333333333331" width="2" height="230.33333333333331"/>
+                                    <color key="backgroundColor" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7j-pa-Uw8" customClass="LocalizableButton" customModule="asiaSpaMVP" customModuleProvider="target">
+                                    <rect key="frame" x="40" y="618.66666666666663" width="334" height="30"/>
+                                    <color key="backgroundColor" red="0.074509803920000006" green="0.3294117647" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="XxZ-U0-R9k"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
+                                    <state key="normal" title="Next">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="التالي"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="englishText" value="Next"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dxX-sM-xfk">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Asialogo" translatesAutoresizingMaskIntoConstraints="NO" id="qWb-Km-w2l">
+                                            <rect key="frame" x="132" y="0.0" width="150" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="150" id="AfR-cy-yNd"/>
+                                                <constraint firstAttribute="height" constant="50" id="F3l-3o-5lC"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXe-mq-Tkm" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                                            <rect key="frame" x="374" y="27" width="18.666666666666686" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="22" id="e72-Ih-3QJ"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="14"/>
+                                            <color key="textColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="الفاتورة"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="englishText" value="Bill"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_pointt" translatesAutoresizingMaskIntoConstraints="NO" id="gYx-z0-ewQ">
+                                            <rect key="frame" x="20" y="5" width="35" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="22" id="Aa2-16-acd"/>
+                                                <constraint firstAttribute="width" constant="35" id="mQC-LI-hgE"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBm-Xk-8Nr" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                                            <rect key="frame" x="22.666666666666671" y="28" width="30" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="ear-DN-HuV"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="14"/>
+                                            <color key="textColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="رجوع"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="englishText" value="Back"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bill" translatesAutoresizingMaskIntoConstraints="NO" id="fYS-p5-H6q">
+                                            <rect key="frame" x="372.66666666666669" y="5" width="21.333333333333314" height="24"/>
+                                        </imageView>
+                                    </subviews>
+                                    <viewLayoutGuide key="safeArea" id="7bN-eG-kw9"/>
+                                    <color key="backgroundColor" red="0.074509803920000006" green="0.3294117647" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="BBm-Xk-8Nr" firstAttribute="centerX" secondItem="gYx-z0-ewQ" secondAttribute="centerX" id="Adc-71-o4a"/>
+                                        <constraint firstItem="KXe-mq-Tkm" firstAttribute="centerY" secondItem="BBm-Xk-8Nr" secondAttribute="centerY" id="Idz-iQ-rvj"/>
+                                        <constraint firstItem="KXe-mq-Tkm" firstAttribute="centerX" secondItem="fYS-p5-H6q" secondAttribute="centerX" id="RZ6-EI-P70"/>
+                                        <constraint firstItem="qWb-Km-w2l" firstAttribute="centerY" secondItem="dxX-sM-xfk" secondAttribute="centerY" id="SAR-WQ-8DW"/>
+                                        <constraint firstItem="7bN-eG-kw9" firstAttribute="bottom" secondItem="BBm-Xk-8Nr" secondAttribute="bottom" constant="2" id="XT5-dT-iMD"/>
+                                        <constraint firstItem="gYx-z0-ewQ" firstAttribute="leading" secondItem="7bN-eG-kw9" secondAttribute="leading" constant="20" id="Yaa-Ry-9tt"/>
+                                        <constraint firstItem="7bN-eG-kw9" firstAttribute="trailing" secondItem="fYS-p5-H6q" secondAttribute="trailing" constant="20" id="b75-i7-D2U"/>
+                                        <constraint firstItem="fYS-p5-H6q" firstAttribute="top" secondItem="7bN-eG-kw9" secondAttribute="top" constant="5" id="g80-bb-4xO"/>
+                                        <constraint firstAttribute="height" constant="50" id="qxM-eU-x8I"/>
+                                        <constraint firstItem="gYx-z0-ewQ" firstAttribute="top" secondItem="7bN-eG-kw9" secondAttribute="top" constant="5" id="rYB-PP-6Tg"/>
+                                        <constraint firstItem="qWb-Km-w2l" firstAttribute="centerX" secondItem="dxX-sM-xfk" secondAttribute="centerX" id="yCA-tK-huO"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemGray6Color"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="730" id="2Ew-bL-3nh"/>
+                                <constraint firstItem="e4s-Nm-kYh" firstAttribute="trailing" secondItem="hin-oR-3be" secondAttribute="trailing" id="5u5-pJ-u0b"/>
+                                <constraint firstItem="hin-oR-3be" firstAttribute="centerY" secondItem="wAv-dg-xE2" secondAttribute="centerY" id="6dm-Yz-M8J"/>
+                                <constraint firstItem="Kfe-Pr-sbk" firstAttribute="leading" secondItem="y1h-yY-tN0" secondAttribute="leading" constant="30" id="6iW-lm-qeF"/>
+                                <constraint firstItem="3Sg-yV-F2s" firstAttribute="trailing" secondItem="mg7-wq-hkx" secondAttribute="trailing" id="7Vj-JI-cuS"/>
+                                <constraint firstItem="j7j-pa-Uw8" firstAttribute="leading" secondItem="y1h-yY-tN0" secondAttribute="leading" constant="40" id="8jn-CR-7fD"/>
+                                <constraint firstItem="71R-Gz-QFm" firstAttribute="top" secondItem="y1h-yY-tN0" secondAttribute="top" constant="145.66666666666663" id="9JI-c0-i0x"/>
+                                <constraint firstItem="UTU-de-uFU" firstAttribute="leading" secondItem="71R-Gz-QFm" secondAttribute="leading" id="9UW-vw-U8w"/>
+                                <constraint firstItem="Kfe-Pr-sbk" firstAttribute="centerX" secondItem="y1h-yY-tN0" secondAttribute="centerX" id="Bb2-iV-VIa"/>
+                                <constraint firstItem="3Sg-yV-F2s" firstAttribute="top" secondItem="KKq-Q2-Q7W" secondAttribute="bottom" constant="15" id="CAG-hp-AFC"/>
+                                <constraint firstItem="KKq-Q2-Q7W" firstAttribute="trailing" secondItem="M72-ZE-W7n" secondAttribute="trailing" id="HJV-OX-yfp"/>
+                                <constraint firstItem="mg7-wq-hkx" firstAttribute="trailing" secondItem="wAv-dg-xE2" secondAttribute="trailing" id="Im8-0n-rJB"/>
+                                <constraint firstItem="UTU-de-uFU" firstAttribute="top" secondItem="mg7-wq-hkx" secondAttribute="top" constant="8" id="JP7-vj-MWH"/>
+                                <constraint firstItem="M72-ZE-W7n" firstAttribute="leading" secondItem="y1h-yY-tN0" secondAttribute="leading" constant="15" id="Jzm-Lv-Afg"/>
+                                <constraint firstItem="dxX-sM-xfk" firstAttribute="top" secondItem="y1h-yY-tN0" secondAttribute="top" id="LTE-X3-FhG"/>
+                                <constraint firstItem="Cbh-TF-p4k" firstAttribute="leading" secondItem="e4s-Nm-kYh" secondAttribute="leading" id="Mjx-9C-I6a"/>
+                                <constraint firstItem="71R-Gz-QFm" firstAttribute="top" secondItem="wAv-dg-xE2" secondAttribute="top" constant="8" id="MwS-KO-uzN"/>
+                                <constraint firstItem="mdD-Is-UuZ" firstAttribute="top" secondItem="e4s-Nm-kYh" secondAttribute="bottom" id="NeB-a5-69a"/>
+                                <constraint firstItem="Cbh-TF-p4k" firstAttribute="centerY" secondItem="3Sg-yV-F2s" secondAttribute="centerY" id="QXH-hK-qpx"/>
+                                <constraint firstItem="71R-Gz-QFm" firstAttribute="centerX" secondItem="wAv-dg-xE2" secondAttribute="centerX" id="Qs6-tI-RPc"/>
+                                <constraint firstItem="KKq-Q2-Q7W" firstAttribute="top" secondItem="mdD-Is-UuZ" secondAttribute="bottom" constant="8" id="QxM-H1-VCa"/>
+                                <constraint firstItem="KKq-Q2-Q7W" firstAttribute="leading" secondItem="M72-ZE-W7n" secondAttribute="leading" id="SfI-v3-v0J"/>
+                                <constraint firstItem="e4s-Nm-kYh" firstAttribute="leading" secondItem="hin-oR-3be" secondAttribute="leading" id="VCr-dG-zKz"/>
+                                <constraint firstItem="3Sg-yV-F2s" firstAttribute="leading" secondItem="mg7-wq-hkx" secondAttribute="leading" id="WCN-Yi-k43"/>
+                                <constraint firstItem="mg7-wq-hkx" firstAttribute="top" secondItem="M72-ZE-W7n" secondAttribute="bottom" constant="20" id="Xi2-WX-Ziz"/>
+                                <constraint firstItem="e4s-Nm-kYh" firstAttribute="centerY" secondItem="mg7-wq-hkx" secondAttribute="centerY" id="azE-7h-Kxv"/>
+                                <constraint firstItem="hin-oR-3be" firstAttribute="leading" secondItem="y1h-yY-tN0" secondAttribute="leading" constant="20" symbolic="YES" id="dHY-rM-zjv"/>
+                                <constraint firstAttribute="trailing" secondItem="j7j-pa-Uw8" secondAttribute="trailing" constant="40" id="dKH-vg-y1n"/>
+                                <constraint firstItem="hin-oR-3be" firstAttribute="top" secondItem="Kfe-Pr-sbk" secondAttribute="bottom" constant="30" id="de2-Ep-wof"/>
+                                <constraint firstItem="Cbh-TF-p4k" firstAttribute="trailing" secondItem="e4s-Nm-kYh" secondAttribute="trailing" id="dl0-TM-4gd"/>
+                                <constraint firstItem="UTU-de-uFU" firstAttribute="trailing" secondItem="71R-Gz-QFm" secondAttribute="trailing" id="fOI-p9-Bxz"/>
+                                <constraint firstItem="mdD-Is-UuZ" firstAttribute="leading" secondItem="e4s-Nm-kYh" secondAttribute="leading" id="hju-cb-86X"/>
+                                <constraint firstAttribute="trailing" secondItem="dxX-sM-xfk" secondAttribute="trailing" id="kej-LG-XOE"/>
+                                <constraint firstItem="71R-Gz-QFm" firstAttribute="bottom" secondItem="mg7-wq-hkx" secondAttribute="top" id="l94-be-XUK"/>
+                                <constraint firstItem="71R-Gz-QFm" firstAttribute="leading" secondItem="y1h-yY-tN0" secondAttribute="leadingMargin" id="lrD-XC-9go"/>
+                                <constraint firstAttribute="trailing" secondItem="Kfe-Pr-sbk" secondAttribute="trailing" constant="30" id="oJE-B7-g9S"/>
+                                <constraint firstAttribute="trailing" secondItem="M72-ZE-W7n" secondAttribute="trailing" constant="15" id="osb-ZE-SSN"/>
+                                <constraint firstItem="M72-ZE-W7n" firstAttribute="leading" secondItem="71R-Gz-QFm" secondAttribute="trailing" constant="5" id="pup-Iu-hwV"/>
+                                <constraint firstItem="mg7-wq-hkx" firstAttribute="leading" secondItem="wAv-dg-xE2" secondAttribute="leading" id="pyf-dI-dKy"/>
+                                <constraint firstItem="UTU-de-uFU" firstAttribute="bottom" secondItem="3Sg-yV-F2s" secondAttribute="bottom" constant="-8" id="tVF-h5-FkJ"/>
+                                <constraint firstItem="M72-ZE-W7n" firstAttribute="top" secondItem="hin-oR-3be" secondAttribute="bottom" constant="8" id="v4U-6F-faP"/>
+                                <constraint firstItem="j7j-pa-Uw8" firstAttribute="top" secondItem="Cbh-TF-p4k" secondAttribute="bottom" constant="50" id="wqt-lB-iIX"/>
+                                <constraint firstItem="dxX-sM-xfk" firstAttribute="leading" secondItem="y1h-yY-tN0" secondAttribute="leading" id="yYB-6b-A3D"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="y1h-yY-tN0" secondAttribute="trailing" id="5ca-wW-IFY"/>
+                        <constraint firstAttribute="bottom" secondItem="y1h-yY-tN0" secondAttribute="bottom" id="9t1-zq-gwd"/>
+                        <constraint firstItem="y1h-yY-tN0" firstAttribute="width" secondItem="iV8-XE-Gp3" secondAttribute="width" id="ZLi-QV-dXc"/>
+                        <constraint firstItem="y1h-yY-tN0" firstAttribute="height" secondItem="iV8-XE-Gp3" secondAttribute="height" priority="250" id="fpy-J7-L1c"/>
+                        <constraint firstItem="y1h-yY-tN0" firstAttribute="leading" secondItem="iV8-XE-Gp3" secondAttribute="leading" id="g3Y-54-f5w"/>
+                        <constraint firstItem="y1h-yY-tN0" firstAttribute="top" secondItem="iV8-XE-Gp3" secondAttribute="top" id="k1v-Rr-Pb4"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="Ps5-cb-vsC"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="lpz-dx-ZIH"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="q6C-tM-sfy"/>
+            <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="q6C-tM-sfy" firstAttribute="bottom" secondItem="iV8-XE-Gp3" secondAttribute="bottom" id="24F-Ih-Tzp"/>
+                <constraint firstItem="H4u-Sh-ErS" firstAttribute="leading" secondItem="q6C-tM-sfy" secondAttribute="leading" id="9DS-Cn-OLz"/>
+                <constraint firstItem="iV8-XE-Gp3" firstAttribute="top" secondItem="q6C-tM-sfy" secondAttribute="top" id="9kE-uc-m9a"/>
+                <constraint firstItem="q6C-tM-sfy" firstAttribute="trailing" secondItem="iV8-XE-Gp3" secondAttribute="trailing" id="HMH-wJ-NzW"/>
+                <constraint firstItem="iV8-XE-Gp3" firstAttribute="leading" secondItem="q6C-tM-sfy" secondAttribute="leading" id="XI4-Ae-DH3"/>
+                <constraint firstItem="q6C-tM-sfy" firstAttribute="top" secondItem="H4u-Sh-ErS" secondAttribute="bottom" id="lee-kW-jED"/>
+                <constraint firstItem="q6C-tM-sfy" firstAttribute="trailing" secondItem="H4u-Sh-ErS" secondAttribute="trailing" id="wEB-H6-Jzs"/>
+            </constraints>
+            <point key="canvasLocation" x="-60" y="-715.14084507042253"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="BBm-Xk-8Nr">
+            <size key="intrinsicContentSize" width="30" height="27"/>
+        </designable>
+        <designable name="Cbh-TF-p4k">
+            <size key="intrinsicContentSize" width="255" height="23"/>
+        </designable>
+        <designable name="KXe-mq-Tkm">
+            <size key="intrinsicContentSize" width="18.666666666666668" height="27"/>
+        </designable>
+        <designable name="Kfe-Pr-sbk">
+            <size key="intrinsicContentSize" width="133.66666666666666" height="34"/>
+        </designable>
+        <designable name="e4s-Nm-kYh">
+            <size key="intrinsicContentSize" width="59" height="23"/>
+        </designable>
+        <designable name="hin-oR-3be">
+            <size key="intrinsicContentSize" width="53.333333333333336" height="23"/>
+        </designable>
+        <designable name="mdD-Is-UuZ">
+            <size key="intrinsicContentSize" width="114.33333333333333" height="19"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Asialogo" width="94.333335876464844" height="45"/>
+        <image name="arrow_pointt" width="13.666666984558105" height="24"/>
+        <image name="bill" width="21.333333969116211" height="24"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

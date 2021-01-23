@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+        <array key="Cairo-SemiBold.ttf">
+            <string>Cairo-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SelectTechnicalCollViewCell" id="tCh-vX-bqq" customClass="SelectTechnicalCollViewCell" customModule="asiaSpaMVP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="93" height="189"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="wsD-pz-btE">
+                <rect key="frame" x="0.0" y="0.0" width="93" height="189"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Awamer Elshabaka" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Mu-rT-qr5" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                        <rect key="frame" x="5" y="8" width="83" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Zdc-OX-FzZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="10"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="أوامر الشبكة"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="dTQ-gk-bxd">
+                        <rect key="frame" x="15" y="36" width="63" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="rZv-pE-dtK"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYu-jQ-1ph" customClass="LocalizableButton" customModule="asiaSpaMVP" customModuleProvider="target">
+                        <rect key="frame" x="58" y="120" width="30" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="JA8-Od-OKf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="7"/>
+                        <state key="normal" title="Details">
+                            <color key="titleColor" red="0.93474422089041098" green="0.74282427226027403" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="تفاصيل"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="detailBuTapped:" destination="tCh-vX-bqq" eventType="touchUpInside" id="76V-lu-Hhx"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQP-vR-aAG" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                        <rect key="frame" x="5" y="120" width="17.5" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="0cV-ov-YR4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="10"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="التقييم"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXE-Ys-fLB" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                        <rect key="frame" x="28.5" y="120" width="17" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="6ut-vN-wRg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="10"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="١٠٠"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XfN-3Z-ym1">
+                        <rect key="frame" x="47" y="120" width="6" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="1NH-lE-uFO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="10"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="١٠٠"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="all rates" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTT-hQ-V0C" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                        <rect key="frame" x="5" y="140" width="34" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="1x6-Y6-hGf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="10"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="عدد التقييمات"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0t-5a-1ho" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                        <rect key="frame" x="41" y="140" width="17" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="DWz-X9-rDV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="10"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="١٠٠"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zQP-vR-aAG" firstAttribute="leading" secondItem="wsD-pz-btE" secondAttribute="leading" constant="5" id="14G-eG-l81"/>
+                    <constraint firstItem="dTQ-gk-bxd" firstAttribute="leading" secondItem="wsD-pz-btE" secondAttribute="leading" constant="15" id="3UW-pe-ORx"/>
+                    <constraint firstAttribute="trailing" secondItem="dTQ-gk-bxd" secondAttribute="trailing" constant="15" id="5MJ-6b-uIt"/>
+                    <constraint firstItem="zQP-vR-aAG" firstAttribute="centerY" secondItem="dYu-jQ-1ph" secondAttribute="centerY" id="7cm-2i-Dc8"/>
+                    <constraint firstItem="LTT-hQ-V0C" firstAttribute="top" secondItem="zQP-vR-aAG" secondAttribute="bottom" constant="10" id="HOl-tT-CfB"/>
+                    <constraint firstItem="XfN-3Z-ym1" firstAttribute="centerY" secondItem="NXE-Ys-fLB" secondAttribute="centerY" id="Nvn-Yn-G2j"/>
+                    <constraint firstAttribute="trailing" secondItem="dYu-jQ-1ph" secondAttribute="trailing" constant="5" id="S54-iD-xYt"/>
+                    <constraint firstItem="dYu-jQ-1ph" firstAttribute="top" secondItem="dTQ-gk-bxd" secondAttribute="bottom" constant="14" id="TmF-qY-STY"/>
+                    <constraint firstItem="8Mu-rT-qr5" firstAttribute="leading" secondItem="wsD-pz-btE" secondAttribute="leading" constant="5" id="VNV-N5-IAi"/>
+                    <constraint firstItem="XfN-3Z-ym1" firstAttribute="leading" secondItem="NXE-Ys-fLB" secondAttribute="trailing" constant="1.5" id="XMJ-8F-Rhu"/>
+                    <constraint firstItem="LTT-hQ-V0C" firstAttribute="leading" secondItem="zQP-vR-aAG" secondAttribute="leading" id="aIS-Fq-Mjv"/>
+                    <constraint firstItem="8Mu-rT-qr5" firstAttribute="top" secondItem="wsD-pz-btE" secondAttribute="top" constant="8" id="bh1-0B-yRg"/>
+                    <constraint firstAttribute="trailing" secondItem="8Mu-rT-qr5" secondAttribute="trailing" constant="5" id="dKJ-yd-7tm"/>
+                    <constraint firstItem="U0t-5a-1ho" firstAttribute="leading" secondItem="LTT-hQ-V0C" secondAttribute="trailing" constant="2" id="fet-Z3-pmw"/>
+                    <constraint firstItem="dTQ-gk-bxd" firstAttribute="top" secondItem="8Mu-rT-qr5" secondAttribute="bottom" constant="8" id="gut-zI-gDe"/>
+                    <constraint firstItem="NXE-Ys-fLB" firstAttribute="centerY" secondItem="zQP-vR-aAG" secondAttribute="centerY" id="j1o-CP-e4S"/>
+                    <constraint firstItem="U0t-5a-1ho" firstAttribute="centerY" secondItem="LTT-hQ-V0C" secondAttribute="centerY" id="jVX-dL-Krt"/>
+                    <constraint firstItem="NXE-Ys-fLB" firstAttribute="leading" secondItem="zQP-vR-aAG" secondAttribute="trailing" constant="6" id="mZp-YG-APy"/>
+                    <constraint firstAttribute="bottom" secondItem="LTT-hQ-V0C" secondAttribute="bottom" constant="8" id="yoP-KY-YpZ"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="93" height="188"/>
+            <connections>
+                <outlet property="allRateLbl" destination="LTT-hQ-V0C" id="5Kh-kK-CLy"/>
+                <outlet property="companyNameLbl" destination="8Mu-rT-qr5" id="TFx-Wk-tax"/>
+                <outlet property="detailsBu" destination="dYu-jQ-1ph" id="x3Z-3h-cfV"/>
+                <outlet property="numberOfAllRateLbl" destination="U0t-5a-1ho" id="P48-sI-w7O"/>
+                <outlet property="numberOfRateLbl" destination="NXE-Ys-fLB" id="3tX-j6-do2"/>
+                <outlet property="profileImage" destination="dTQ-gk-bxd" id="Q8y-HZ-qcS"/>
+                <outlet property="rateLbl" destination="zQP-vR-aAG" id="hvS-kB-53e"/>
+            </connections>
+            <point key="canvasLocation" x="202.17391304347828" y="43.191964285714285"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="8Mu-rT-qr5">
+            <size key="intrinsicContentSize" width="81.5" height="19"/>
+        </designable>
+        <designable name="LTT-hQ-V0C">
+            <size key="intrinsicContentSize" width="34" height="19"/>
+        </designable>
+        <designable name="NXE-Ys-fLB">
+            <size key="intrinsicContentSize" width="17" height="19"/>
+        </designable>
+        <designable name="U0t-5a-1ho">
+            <size key="intrinsicContentSize" width="17" height="19"/>
+        </designable>
+        <designable name="zQP-vR-aAG">
+            <size key="intrinsicContentSize" width="17.5" height="19"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="bg" width="270" height="377.5"/>
+    </resources>
+</document>

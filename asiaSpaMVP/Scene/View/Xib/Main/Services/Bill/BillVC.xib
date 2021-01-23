@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Bold.ttf">
+            <string>Cairo-Bold</string>
+        </array>
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+        <array key="Cairo-SemiBold.ttf">
+            <string>Cairo-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BillVC" customModule="asiaSpaMVP" customModuleProvider="target">
+            <connections>
+                <outlet property="agreeWithConditonsBu" destination="vE2-by-0be" id="tg0-t4-Q2S"/>
+                <outlet property="applePayBu" destination="VOR-1i-AnN" id="8gY-qw-oSz"/>
+                <outlet property="billTableView" destination="C5c-xY-boN" id="l68-AK-nhC"/>
+                <outlet property="bookingConfirmBu" destination="b2T-wG-Vpz" id="UrI-fb-WoB"/>
+                <outlet property="creditCardBu" destination="y4K-su-z0A" id="4Go-u4-wAM"/>
+                <outlet property="discountCodeTxtxField" destination="EGv-QZ-LJg" id="NwG-Jx-MPV"/>
+                <outlet property="discountLbl" destination="fAV-H0-uHm" id="Nff-8u-TYD"/>
+                <outlet property="discountNameLbl" destination="VqH-T1-Mju" id="AYH-eh-5kc"/>
+                <outlet property="mainBu" destination="lI4-Dx-t7X" id="3bu-9n-Vcv"/>
+                <outlet property="mainLbl" destination="0sa-16-9kf" id="Acb-sq-VOW"/>
+                <outlet property="onlinePayBu" destination="a2e-xl-Jw2" id="LsW-ya-YGZ"/>
+                <outlet property="oriceLbl" destination="ifg-Uc-dIJ" id="b6e-Jb-JPW"/>
+                <outlet property="payCashBu" destination="fat-Pf-EdO" id="7ds-82-W7m"/>
+                <outlet property="priceNameLbl" destination="3gj-Wf-KqI" id="yvj-DB-rh6"/>
+                <outlet property="totalPriceLbl" destination="4Ug-GR-WEJ" id="Pzi-ax-81n"/>
+                <outlet property="totalPriceNameLbl" destination="QOq-un-2pg" id="U7d-YH-e1Q"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="walletPayBu" destination="mgP-wh-rqx" id="YkW-Sh-Zq6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lhw-oo-VOx">
+                    <rect key="frame" x="0.0" y="-50" width="414" height="50"/>
+                    <color key="backgroundColor" red="0.023529411760000001" green="0.34509803919999998" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="t4B-HI-2ia"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Um4-hZ-P0i">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fn4-qS-G1S">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="966"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sPG-dO-3Zk">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lI4-Dx-t7X">
+                                            <rect key="frame" x="15" y="0.0" width="30" height="30"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="goToMainBuTapped:" destination="-1" eventType="touchUpInside" id="Fk4-yD-L2N"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Akc-bW-EPF" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                                            <rect key="frame" x="193" y="-12.666666666666664" width="28.333333333333343" height="75.333333333333329"/>
+                                            <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="20"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="الفاتورة"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sa-16-9kf" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                                            <rect key="frame" x="14.333333333333334" y="18" width="31.666666666666664" height="29"/>
+                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="15"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="الرئيسية"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.074509803920000006" green="0.33136100759999998" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="Akc-bW-EPF" firstAttribute="centerY" secondItem="sPG-dO-3Zk" secondAttribute="centerY" id="BzU-71-NX8"/>
+                                        <constraint firstItem="0sa-16-9kf" firstAttribute="centerX" secondItem="lI4-Dx-t7X" secondAttribute="centerX" id="DcG-hd-ndx"/>
+                                        <constraint firstItem="Akc-bW-EPF" firstAttribute="centerX" secondItem="sPG-dO-3Zk" secondAttribute="centerX" id="Gco-vR-hHB"/>
+                                        <constraint firstItem="lI4-Dx-t7X" firstAttribute="leading" secondItem="sPG-dO-3Zk" secondAttribute="leading" constant="15" id="Xlj-bg-OAw"/>
+                                        <constraint firstItem="lI4-Dx-t7X" firstAttribute="centerY" secondItem="sPG-dO-3Zk" secondAttribute="centerY" constant="-10" id="ZlG-Lh-JyG"/>
+                                        <constraint firstAttribute="bottom" secondItem="0sa-16-9kf" secondAttribute="bottom" constant="3" id="g2G-az-sCe"/>
+                                        <constraint firstAttribute="height" constant="50" id="r7x-t9-bm7"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All of bill recent services" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3i-2i-SJW" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                                    <rect key="frame" x="8" y="70" width="171.33333333333334" height="32"/>
+                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                    <color key="textColor" red="0.035294117649999998" green="0.35294117650000001" blue="0.30980392159999998" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="ملخص الخدمات الحالية في الفاتورة"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rYl-3a-JkS">
+                                    <rect key="frame" x="8" y="117" width="398" height="25"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Service Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oL0-JY-1k5" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="119.33333333333333" height="25"/>
+                                            <color key="backgroundColor" red="0.03594792795" green="0.35161537640000001" blue="0.31024760689999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="إسم الخدمة"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vay-kW-fuY" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                                            <rect key="frame" x="120.33333333333334" y="0.0" width="71.666666666666657" height="25"/>
+                                            <color key="backgroundColor" red="0.03594792795" green="0.35161537640000001" blue="0.31024760689999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="التاريخ"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BkF-2r-BAZ" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                                            <rect key="frame" x="193" y="0.0" width="63.666666666666686" height="25"/>
+                                            <color key="backgroundColor" red="0.03594792795" green="0.35161537640000001" blue="0.31024760689999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="الوقت"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hub-oP-epp" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                                            <rect key="frame" x="257.66666666666669" y="0.0" width="84.333333333333314" height="25"/>
+                                            <color key="backgroundColor" red="0.03594792795" green="0.35161537640000001" blue="0.31024760689999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="السعر"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CT7-jj-wfU" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                                            <rect key="frame" x="343" y="0.0" width="55" height="25"/>
+                                            <color key="backgroundColor" red="0.03594792795" green="0.35161537640000001" blue="0.31024760689999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="تعديل"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="oL0-JY-1k5" firstAttribute="top" secondItem="rYl-3a-JkS" secondAttribute="top" id="0g7-Dy-s0v"/>
+                                        <constraint firstAttribute="height" constant="25" id="1tZ-yo-r1Q"/>
+                                        <constraint firstAttribute="bottom" secondItem="BkF-2r-BAZ" secondAttribute="bottom" id="A5b-gF-AwR"/>
+                                        <constraint firstAttribute="trailing" secondItem="CT7-jj-wfU" secondAttribute="trailing" id="E1E-MF-Qe8"/>
+                                        <constraint firstAttribute="bottom" secondItem="hub-oP-epp" secondAttribute="bottom" id="KU3-Bx-1yj"/>
+                                        <constraint firstItem="oL0-JY-1k5" firstAttribute="leading" secondItem="rYl-3a-JkS" secondAttribute="leading" id="LZQ-We-v41"/>
+                                        <constraint firstItem="hub-oP-epp" firstAttribute="leading" secondItem="BkF-2r-BAZ" secondAttribute="trailing" constant="1" id="LaE-0R-qpJ"/>
+                                        <constraint firstItem="BkF-2r-BAZ" firstAttribute="width" secondItem="rYl-3a-JkS" secondAttribute="width" multiplier="0.16" id="Lfs-R8-jMi"/>
+                                        <constraint firstAttribute="bottom" secondItem="CT7-jj-wfU" secondAttribute="bottom" id="M8A-eU-cTN"/>
+                                        <constraint firstItem="Vay-kW-fuY" firstAttribute="width" secondItem="rYl-3a-JkS" secondAttribute="width" multiplier="0.18" id="PBy-Sg-AzB"/>
+                                        <constraint firstItem="Vay-kW-fuY" firstAttribute="top" secondItem="rYl-3a-JkS" secondAttribute="top" id="QO0-A6-G39"/>
+                                        <constraint firstItem="BkF-2r-BAZ" firstAttribute="top" secondItem="rYl-3a-JkS" secondAttribute="top" id="UWW-6g-mOD"/>
+                                        <constraint firstAttribute="bottom" secondItem="Vay-kW-fuY" secondAttribute="bottom" id="VTK-5R-c1s"/>
+                                        <constraint firstItem="CT7-jj-wfU" firstAttribute="leading" secondItem="hub-oP-epp" secondAttribute="trailing" constant="1" id="azN-wl-H5E"/>
+                                        <constraint firstItem="Vay-kW-fuY" firstAttribute="leading" secondItem="oL0-JY-1k5" secondAttribute="trailing" constant="1" id="k17-vi-Sag"/>
+                                        <constraint firstItem="hub-oP-epp" firstAttribute="top" secondItem="rYl-3a-JkS" secondAttribute="top" id="sr7-IN-bOt"/>
+                                        <constraint firstItem="oL0-JY-1k5" firstAttribute="width" secondItem="rYl-3a-JkS" secondAttribute="width" multiplier="0.3" id="u2T-h9-gZN"/>
+                                        <constraint firstItem="hub-oP-epp" firstAttribute="width" secondItem="rYl-3a-JkS" secondAttribute="width" multiplier="0.212" id="wz3-Ei-tp7"/>
+                                        <constraint firstItem="BkF-2r-BAZ" firstAttribute="leading" secondItem="Vay-kW-fuY" secondAttribute="trailing" constant="1" id="xg4-XX-xNG"/>
+                                        <constraint firstAttribute="bottom" secondItem="oL0-JY-1k5" secondAttribute="bottom" id="yAX-eq-bP5"/>
+                                        <constraint firstItem="CT7-jj-wfU" firstAttribute="top" secondItem="rYl-3a-JkS" secondAttribute="top" id="yep-tA-vVj"/>
+                                    </constraints>
+                                </view>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="C5c-xY-boN">
+                                    <rect key="frame" x="8" y="142" width="398" height="200"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="E1v-V0-w84"/>
+                                    </constraints>
+                                </tableView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dgV-rL-zgQ">
+                                    <rect key="frame" x="8" y="357" width="398" height="130"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gj-Wf-KqI" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                                            <rect key="frame" x="20" y="9.6666666666666856" width="43" height="32"/>
+                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="السعر"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discount :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VqH-T1-Mju" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                                            <rect key="frame" x="20" y="45.666666666666686" width="71" height="30"/>
+                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="16"/>
+                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="الخصم"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Price + Extra Price :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOq-un-2pg" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                                            <rect key="frame" x="20" y="83.666666666666686" width="164.66666666666666" height="30"/>
+                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="16"/>
+                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="المبلغ الاجمالي(شامل ضريبة القيمة المضافة)"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="300$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifg-Uc-dIJ" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                                            <rect key="frame" x="111.99999999999999" y="15" width="41.333333333333329" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAV-H0-uHm" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                                            <rect key="frame" x="112" y="50" width="30.666666666666657" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="250$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ug-GR-WEJ" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                                            <rect key="frame" x="199.66666666666666" y="88" width="40.666666666666657" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="QOq-un-2pg" firstAttribute="top" secondItem="VqH-T1-Mju" secondAttribute="bottom" constant="8" id="46g-B7-PLa"/>
+                                        <constraint firstItem="4Ug-GR-WEJ" firstAttribute="leading" secondItem="QOq-un-2pg" secondAttribute="trailing" constant="15" id="8Kd-hz-NZ1"/>
+                                        <constraint firstItem="fAV-H0-uHm" firstAttribute="leading" secondItem="ifg-Uc-dIJ" secondAttribute="leading" id="BwB-xp-Jxv"/>
+                                        <constraint firstItem="VqH-T1-Mju" firstAttribute="leading" secondItem="3gj-Wf-KqI" secondAttribute="leading" id="DY5-Ep-tNg"/>
+                                        <constraint firstItem="3gj-Wf-KqI" firstAttribute="centerY" secondItem="ifg-Uc-dIJ" secondAttribute="centerY" id="Mof-R0-8Up"/>
+                                        <constraint firstItem="3gj-Wf-KqI" firstAttribute="leading" secondItem="dgV-rL-zgQ" secondAttribute="leading" constant="20" id="SHD-5w-hvo"/>
+                                        <constraint firstItem="ifg-Uc-dIJ" firstAttribute="leading" secondItem="3gj-Wf-KqI" secondAttribute="trailing" constant="49" id="UsW-UV-U2T"/>
+                                        <constraint firstItem="QOq-un-2pg" firstAttribute="leading" secondItem="VqH-T1-Mju" secondAttribute="leading" id="ZCz-oH-IHt"/>
+                                        <constraint firstItem="QOq-un-2pg" firstAttribute="centerY" secondItem="4Ug-GR-WEJ" secondAttribute="centerY" id="kH2-5Q-cJF"/>
+                                        <constraint firstItem="VqH-T1-Mju" firstAttribute="top" secondItem="3gj-Wf-KqI" secondAttribute="bottom" constant="4" id="ks2-Rr-h5N"/>
+                                        <constraint firstAttribute="height" constant="130" id="l3c-e0-cDT"/>
+                                        <constraint firstItem="VqH-T1-Mju" firstAttribute="centerY" secondItem="fAV-H0-uHm" secondAttribute="centerY" id="xcl-85-VwQ"/>
+                                        <constraint firstItem="ifg-Uc-dIJ" firstAttribute="top" secondItem="dgV-rL-zgQ" secondAttribute="top" constant="15" id="xjA-77-x8B"/>
+                                        <constraint firstItem="fAV-H0-uHm" firstAttribute="leading" secondItem="VqH-T1-Mju" secondAttribute="trailing" constant="21" id="z1b-5W-I9t"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discount Code" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6b-1w-FkI" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                                    <rect key="frame" x="18" y="502" width="103" height="32"/>
+                                    <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
+                                    <color key="textColor" red="0.16333165119603732" green="0.16333165119603732" blue="0.16333165119603732" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="كود الخصم"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EGv-QZ-LJg">
+                                    <rect key="frame" x="295.33333333333331" y="501" width="97.666666666666686" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select pay way" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7D-hs-ErE" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                                    <rect key="frame" x="14.999999999999993" y="564" width="107.33333333333331" height="32"/>
+                                    <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
+                                    <color key="textColor" red="0.16333165120000001" green="0.16333165120000001" blue="0.16333165120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="اختر طريقة الدفع"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="agrre to conditions" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0vZ-7O-NC2" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                                    <rect key="frame" x="40" y="822.66666666666663" width="133.33333333333334" height="32"/>
+                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="موافق علي الشروط والاحكام"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Untitled-1 F2" translatesAutoresizingMaskIntoConstraints="NO" id="IWL-tm-AkO">
+                                    <rect key="frame" x="147" y="692.66666666666663" width="20" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="Lyh-fu-2Yr"/>
+                                        <constraint firstAttribute="width" constant="20" id="UW5-HQ-Wq1"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pay cash" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MId-Mv-MiM" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                                    <rect key="frame" x="40" y="606.66666666666663" width="62.333333333333343" height="32"/>
+                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="الدفع نقداً"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="apple pay" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eK-Mp-6l4" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                                    <rect key="frame" x="39.999999999999993" y="726.66666666666663" width="68.333333333333314" height="32"/>
+                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="Apple Pay"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="online pay" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbj-tf-Q9X" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                                    <rect key="frame" x="40" y="767.66666666666663" width="73" height="32"/>
+                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="الدفع اونلاين"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Pd5-Y5-Tf7">
+                                    <rect key="frame" x="15" y="616" width="15" height="175"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fat-Pf-EdO">
+                                            <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="gNu-RU-SPx"/>
+                                            </constraints>
+                                            <state key="normal" image="uncheckbox"/>
+                                            <state key="selected" image="checkbox"/>
+                                            <connections>
+                                                <action selector="payCashBuTapped:" destination="-1" eventType="touchUpInside" id="wpC-nX-Y9o"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4K-su-z0A">
+                                            <rect key="frame" x="0.0" y="40" width="15" height="15"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="iNg-rf-7sM"/>
+                                            </constraints>
+                                            <state key="normal" image="uncheckbox"/>
+                                            <state key="selected" image="checkbox"/>
+                                            <connections>
+                                                <action selector="creditCardBuTapped:" destination="-1" eventType="touchUpInside" id="DIw-gO-pJu"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgP-wh-rqx">
+                                            <rect key="frame" x="0.0" y="80" width="15" height="15"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="Wm2-Hg-7en"/>
+                                            </constraints>
+                                            <state key="normal" image="uncheckbox"/>
+                                            <state key="selected" image="checkbox"/>
+                                            <connections>
+                                                <action selector="walletPayBuTapped:" destination="-1" eventType="touchUpInside" id="MfO-1L-vLV"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOR-1i-AnN">
+                                            <rect key="frame" x="0.0" y="120" width="15" height="15"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="rrU-jg-AQD"/>
+                                            </constraints>
+                                            <state key="normal" image="uncheckbox"/>
+                                            <state key="selected" image="checkbox"/>
+                                            <connections>
+                                                <action selector="applePayBuTapped:" destination="-1" eventType="touchUpInside" id="0gd-ir-57a"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2e-xl-Jw2">
+                                            <rect key="frame" x="0.0" y="160" width="15" height="15"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="USz-RU-ai5"/>
+                                            </constraints>
+                                            <state key="normal" image="uncheckbox"/>
+                                            <state key="selected" image="checkbox"/>
+                                            <connections>
+                                                <action selector="onlinePayBuTapped:" destination="-1" eventType="touchUpInside" id="HHI-wy-pcA"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="15" id="wZt-Ig-bQc"/>
+                                    </constraints>
+                                </stackView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="applepay" translatesAutoresizingMaskIntoConstraints="NO" id="R7T-h7-0KO">
+                                    <rect key="frame" x="116.33333333333333" y="732.66666666666663" width="19.999999999999986" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="Lg5-Fj-KTu"/>
+                                        <constraint firstAttribute="width" constant="20" id="lT6-pk-Fdk"/>
+                                    </constraints>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vE2-by-0be">
+                                    <rect key="frame" x="15" y="831" width="15" height="15"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="15" id="BPW-K9-eVU"/>
+                                        <constraint firstAttribute="width" constant="15" id="JHx-Dm-SXE"/>
+                                    </constraints>
+                                    <state key="normal" image="uncheckbox"/>
+                                    <state key="selected" image="checkbox"/>
+                                    <connections>
+                                        <action selector="agreeWithConditonsBuTapped:" destination="-1" eventType="touchUpInside" id="nC4-kI-LNH"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="credit card" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zf-Nf-x05" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                                    <rect key="frame" x="40.000000000000007" y="646.66666666666663" width="74.666666666666686" height="32"/>
+                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="بطاقة الصراف الآلي"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="use my wallet" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5R-S0-PSg" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                                    <rect key="frame" x="40" y="687" width="99" height="31"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="31" id="e0h-6Y-WuT"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="إستخدام محفظتي"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2T-wG-Vpz" customClass="LocalizableButton" customModule="asiaSpaMVP" customModuleProvider="target">
+                                    <rect key="frame" x="30" y="904.66666666666663" width="354" height="35"/>
+                                    <color key="backgroundColor" red="0.08235294118" green="0.33333333329999998" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="35" id="Fpq-Bf-vSd"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
+                                    <state key="normal" title="Confirm Booking ">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="حجز الخدمة"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="bookingConfirmBuTapped:" destination="-1" eventType="touchUpInside" id="su6-hP-rad"/>
+                                    </connections>
+                                </button>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="BoQ-1r-BsV">
+                                    <rect key="frame" x="117.66666666666669" y="777" width="66" height="13.333333333333371"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="visa" translatesAutoresizingMaskIntoConstraints="NO" id="U93-kb-KRH">
+                                            <rect key="frame" x="0.0" y="0.0" width="20" height="13.333333333333334"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="20" id="aEJ-E7-caR"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MasterCard_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="1fy-P8-m9J">
+                                            <rect key="frame" x="22.999999999999986" y="0.0" width="20" height="13.333333333333334"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="20" id="AdD-gd-rrw"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mada" translatesAutoresizingMaskIntoConstraints="NO" id="4Ln-6s-KQk">
+                                            <rect key="frame" x="45.999999999999986" y="0.0" width="20" height="13.333333333333334"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="20" id="aY2-Oh-n1k"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="66" id="NGQ-Kt-9Wx"/>
+                                        <constraint firstAttribute="height" constant="13.33" id="vc7-3W-Nj8"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemGray6Color"/>
+                            <constraints>
+                                <constraint firstItem="0vZ-7O-NC2" firstAttribute="centerY" secondItem="vE2-by-0be" secondAttribute="centerY" id="0dq-zr-bc4"/>
+                                <constraint firstItem="vE2-by-0be" firstAttribute="top" secondItem="Pd5-Y5-Tf7" secondAttribute="bottom" constant="40" id="277-VV-spO"/>
+                                <constraint firstItem="2zf-Nf-x05" firstAttribute="leading" secondItem="MId-Mv-MiM" secondAttribute="leading" id="4Ec-cX-ndQ"/>
+                                <constraint firstItem="dgV-rL-zgQ" firstAttribute="leading" secondItem="C5c-xY-boN" secondAttribute="leading" id="4QN-ts-GMQ"/>
+                                <constraint firstItem="EGv-QZ-LJg" firstAttribute="centerY" secondItem="Q6b-1w-FkI" secondAttribute="centerY" id="6RP-zT-PpF"/>
+                                <constraint firstItem="R7T-h7-0KO" firstAttribute="leading" secondItem="2eK-Mp-6l4" secondAttribute="trailing" constant="8" symbolic="YES" id="859-Sq-JSC"/>
+                                <constraint firstItem="2zf-Nf-x05" firstAttribute="centerY" secondItem="y4K-su-z0A" secondAttribute="centerY" constant="-1" id="BoX-m6-iNl"/>
+                                <constraint firstItem="2eK-Mp-6l4" firstAttribute="leading" secondItem="I5R-S0-PSg" secondAttribute="leading" id="C2e-WF-TmV"/>
+                                <constraint firstItem="sPG-dO-3Zk" firstAttribute="leading" secondItem="fn4-qS-G1S" secondAttribute="leading" id="DMD-3K-jaj"/>
+                                <constraint firstItem="BoQ-1r-BsV" firstAttribute="leading" secondItem="bbj-tf-Q9X" secondAttribute="trailing" constant="4.6666666666666856" id="EHH-WL-8vq"/>
+                                <constraint firstAttribute="trailing" secondItem="EGv-QZ-LJg" secondAttribute="trailing" constant="21" id="FNT-bA-Osb"/>
+                                <constraint firstItem="BoQ-1r-BsV" firstAttribute="centerY" secondItem="bbj-tf-Q9X" secondAttribute="centerY" id="NJx-U4-6Zb"/>
+                                <constraint firstItem="C5c-xY-boN" firstAttribute="leading" secondItem="rYl-3a-JkS" secondAttribute="leading" id="OeS-f0-Omc"/>
+                                <constraint firstAttribute="trailing" secondItem="b2T-wG-Vpz" secondAttribute="trailing" constant="30" id="OwL-kh-bcX"/>
+                                <constraint firstItem="sPG-dO-3Zk" firstAttribute="top" secondItem="fn4-qS-G1S" secondAttribute="top" id="Pjv-hg-GqX"/>
+                                <constraint firstItem="0vZ-7O-NC2" firstAttribute="leading" secondItem="bbj-tf-Q9X" secondAttribute="leading" id="Rx5-dg-NWs"/>
+                                <constraint firstItem="R7T-h7-0KO" firstAttribute="centerY" secondItem="2eK-Mp-6l4" secondAttribute="centerY" id="SjI-ba-dJ4"/>
+                                <constraint firstItem="Pd5-Y5-Tf7" firstAttribute="leading" secondItem="fn4-qS-G1S" secondAttribute="leading" constant="15" id="TUm-iM-RJR"/>
+                                <constraint firstItem="b2T-wG-Vpz" firstAttribute="top" secondItem="0vZ-7O-NC2" secondAttribute="bottom" constant="50" id="U5N-Cf-Qt7"/>
+                                <constraint firstItem="dgV-rL-zgQ" firstAttribute="top" secondItem="C5c-xY-boN" secondAttribute="bottom" constant="15" id="UOG-nx-V9t"/>
+                                <constraint firstItem="B3i-2i-SJW" firstAttribute="top" secondItem="sPG-dO-3Zk" secondAttribute="bottom" constant="20" id="Uxt-Tr-WcU"/>
+                                <constraint firstItem="IWL-tm-AkO" firstAttribute="centerY" secondItem="I5R-S0-PSg" secondAttribute="centerY" id="VnO-YO-YwS"/>
+                                <constraint firstItem="L7D-hs-ErE" firstAttribute="leading" secondItem="fn4-qS-G1S" secondAttribute="leading" constant="15" id="Wpr-hi-Xum"/>
+                                <constraint firstItem="MId-Mv-MiM" firstAttribute="centerY" secondItem="fat-Pf-EdO" secondAttribute="centerY" constant="-1" id="XhZ-y0-Qpl"/>
+                                <constraint firstItem="I5R-S0-PSg" firstAttribute="leading" secondItem="2zf-Nf-x05" secondAttribute="leading" id="Y2P-sb-Ljr"/>
+                                <constraint firstItem="Q6b-1w-FkI" firstAttribute="top" secondItem="dgV-rL-zgQ" secondAttribute="bottom" constant="15" id="YMw-qq-Td4"/>
+                                <constraint firstItem="bbj-tf-Q9X" firstAttribute="leading" secondItem="2eK-Mp-6l4" secondAttribute="leading" id="Ys7-2D-pvX"/>
+                                <constraint firstItem="rYl-3a-JkS" firstAttribute="top" secondItem="B3i-2i-SJW" secondAttribute="bottom" constant="15" id="aPQ-45-HOP"/>
+                                <constraint firstItem="dgV-rL-zgQ" firstAttribute="trailing" secondItem="C5c-xY-boN" secondAttribute="trailing" id="afE-dm-LY2"/>
+                                <constraint firstItem="C5c-xY-boN" firstAttribute="trailing" secondItem="rYl-3a-JkS" secondAttribute="trailing" id="b3g-X7-BLX"/>
+                                <constraint firstItem="Pd5-Y5-Tf7" firstAttribute="top" secondItem="L7D-hs-ErE" secondAttribute="bottom" constant="20" id="cJh-ve-IcK"/>
+                                <constraint firstItem="IWL-tm-AkO" firstAttribute="leading" secondItem="I5R-S0-PSg" secondAttribute="trailing" constant="8" symbolic="YES" id="duS-MG-LzO"/>
+                                <constraint firstItem="b2T-wG-Vpz" firstAttribute="leading" secondItem="fn4-qS-G1S" secondAttribute="leading" constant="30" id="eaZ-Ah-2sV"/>
+                                <constraint firstAttribute="trailing" secondItem="sPG-dO-3Zk" secondAttribute="trailing" id="g2s-rU-EKc"/>
+                                <constraint firstItem="bbj-tf-Q9X" firstAttribute="centerY" secondItem="a2e-xl-Jw2" secondAttribute="centerY" id="gBf-hN-lBd"/>
+                                <constraint firstItem="C5c-xY-boN" firstAttribute="top" secondItem="rYl-3a-JkS" secondAttribute="bottom" id="hof-eo-Lp8"/>
+                                <constraint firstItem="Q6b-1w-FkI" firstAttribute="leading" secondItem="dgV-rL-zgQ" secondAttribute="leading" constant="10" id="j3a-56-q9i"/>
+                                <constraint firstItem="2eK-Mp-6l4" firstAttribute="centerY" secondItem="VOR-1i-AnN" secondAttribute="centerY" constant="-1" id="kES-ml-7lq"/>
+                                <constraint firstItem="MId-Mv-MiM" firstAttribute="leading" secondItem="fat-Pf-EdO" secondAttribute="trailing" constant="10" id="n1d-zj-Cw8"/>
+                                <constraint firstItem="I5R-S0-PSg" firstAttribute="centerY" secondItem="mgP-wh-rqx" secondAttribute="centerY" constant="-1" id="nJ9-P1-3TB"/>
+                                <constraint firstAttribute="trailing" secondItem="rYl-3a-JkS" secondAttribute="trailing" constant="8" id="sms-3w-JVd"/>
+                                <constraint firstItem="B3i-2i-SJW" firstAttribute="leading" secondItem="fn4-qS-G1S" secondAttribute="leading" constant="8" id="xb8-6M-WpX"/>
+                                <constraint firstItem="vE2-by-0be" firstAttribute="leading" secondItem="Pd5-Y5-Tf7" secondAttribute="leading" id="y4h-J6-4Q8"/>
+                                <constraint firstItem="L7D-hs-ErE" firstAttribute="top" secondItem="Q6b-1w-FkI" secondAttribute="bottom" constant="30" id="yGG-i1-Qhx"/>
+                                <constraint firstItem="rYl-3a-JkS" firstAttribute="leading" secondItem="B3i-2i-SJW" secondAttribute="leading" id="ziG-xj-YAv"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="fn4-qS-G1S" firstAttribute="top" secondItem="Um4-hZ-P0i" secondAttribute="top" id="B1o-Lq-Rdc"/>
+                        <constraint firstItem="fn4-qS-G1S" firstAttribute="width" secondItem="Um4-hZ-P0i" secondAttribute="width" id="SN5-Y3-vhN"/>
+                        <constraint firstItem="fn4-qS-G1S" firstAttribute="leading" secondItem="Um4-hZ-P0i" secondAttribute="leading" id="a73-DZ-HsF"/>
+                        <constraint firstItem="fn4-qS-G1S" firstAttribute="height" secondItem="Um4-hZ-P0i" secondAttribute="height" priority="250" constant="230" id="lBk-np-u7h"/>
+                        <constraint firstAttribute="bottom" secondItem="fn4-qS-G1S" secondAttribute="bottom" id="lLI-Ld-8ee"/>
+                        <constraint firstAttribute="trailing" secondItem="fn4-qS-G1S" secondAttribute="trailing" id="tyg-4a-hAN"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="S72-oV-FOq"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="8Ta-Ur-qHN"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.023529411760000001" green="0.34509803919999998" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="Lhw-oo-VOx" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Adj-vO-acX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Um4-hZ-P0i" secondAttribute="trailing" id="BAN-RK-5Ur"/>
+                <constraint firstItem="Um4-hZ-P0i" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="IiQ-nw-fcJ"/>
+                <constraint firstItem="Um4-hZ-P0i" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ba1-1q-GMA"/>
+                <constraint firstItem="Lhw-oo-VOx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dQT-zm-xUJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Um4-hZ-P0i" secondAttribute="bottom" id="eTu-9R-s3e"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Lhw-oo-VOx" secondAttribute="trailing" id="pe4-FT-vVT"/>
+            </constraints>
+            <point key="canvasLocation" x="-107.24637681159422" y="75.815217391304358"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="0sa-16-9kf">
+            <size key="intrinsicContentSize" width="31.666666666666668" height="29"/>
+        </designable>
+        <designable name="0vZ-7O-NC2">
+            <size key="intrinsicContentSize" width="133.33333333333334" height="32"/>
+        </designable>
+        <designable name="2eK-Mp-6l4">
+            <size key="intrinsicContentSize" width="68.333333333333329" height="32"/>
+        </designable>
+        <designable name="2zf-Nf-x05">
+            <size key="intrinsicContentSize" width="74.666666666666671" height="32"/>
+        </designable>
+        <designable name="3gj-Wf-KqI">
+            <size key="intrinsicContentSize" width="43" height="32"/>
+        </designable>
+        <designable name="4Ug-GR-WEJ">
+            <size key="intrinsicContentSize" width="40.666666666666664" height="21"/>
+        </designable>
+        <designable name="Akc-bW-EPF">
+            <size key="intrinsicContentSize" width="28.333333333333332" height="38"/>
+        </designable>
+        <designable name="B3i-2i-SJW">
+            <size key="intrinsicContentSize" width="171.33333333333334" height="32"/>
+        </designable>
+        <designable name="BkF-2r-BAZ">
+            <size key="intrinsicContentSize" width="28" height="15"/>
+        </designable>
+        <designable name="CT7-jj-wfU">
+            <size key="intrinsicContentSize" width="19" height="12"/>
+        </designable>
+        <designable name="I5R-S0-PSg">
+            <size key="intrinsicContentSize" width="99" height="32"/>
+        </designable>
+        <designable name="L7D-hs-ErE">
+            <size key="intrinsicContentSize" width="107.33333333333333" height="32"/>
+        </designable>
+        <designable name="MId-Mv-MiM">
+            <size key="intrinsicContentSize" width="62.333333333333336" height="32"/>
+        </designable>
+        <designable name="Q6b-1w-FkI">
+            <size key="intrinsicContentSize" width="103" height="32"/>
+        </designable>
+        <designable name="QOq-un-2pg">
+            <size key="intrinsicContentSize" width="164.66666666666666" height="30"/>
+        </designable>
+        <designable name="Vay-kW-fuY">
+            <size key="intrinsicContentSize" width="28.666666666666668" height="16"/>
+        </designable>
+        <designable name="VqH-T1-Mju">
+            <size key="intrinsicContentSize" width="66.333333333333329" height="30"/>
+        </designable>
+        <designable name="bbj-tf-Q9X">
+            <size key="intrinsicContentSize" width="73" height="32"/>
+        </designable>
+        <designable name="fAV-H0-uHm">
+            <size key="intrinsicContentSize" width="30.666666666666668" height="21"/>
+        </designable>
+        <designable name="hub-oP-epp">
+            <size key="intrinsicContentSize" width="29" height="15"/>
+        </designable>
+        <designable name="ifg-Uc-dIJ">
+            <size key="intrinsicContentSize" width="41.333333333333336" height="21"/>
+        </designable>
+        <designable name="oL0-JY-1k5">
+            <size key="intrinsicContentSize" width="84" height="16"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="MasterCard_Logo" width="20" height="12"/>
+        <image name="Untitled-1 F2" width="107" height="116.33333587646484"/>
+        <image name="applepay" width="50" height="50"/>
+        <image name="checkbox" width="50" height="50"/>
+        <image name="mada" width="20" height="13.333333015441895"/>
+        <image name="uncheckbox" width="50" height="50"/>
+        <image name="visa" width="20" height="13"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

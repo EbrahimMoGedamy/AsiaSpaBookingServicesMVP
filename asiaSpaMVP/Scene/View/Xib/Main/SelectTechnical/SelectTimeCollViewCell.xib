@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SelectTimeCollViewCell" id="qGc-tK-by1" customClass="SelectTimeCollViewCell" customModule="asiaSpaMVP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="OpK-Oq-mhf">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="60"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h53-tQ-z0i" userLabel="day" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                        <rect key="frame" x="3" y="3" width="74" height="30"/>
+                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="discount" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDy-vV-Xza" userLabel="date" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                        <rect key="frame" x="10" y="27" width="46.5" height="28"/>
+                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UB7-na-CfS" userLabel="date" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                        <rect key="frame" x="58.5" y="27" width="11.5" height="28"/>
+                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="10"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6v-zY-4Ae" customClass="LocalizableLabel" customModule="asiaSpaMVP" customModuleProvider="target">
+                        <rect key="frame" x="71" y="22" width="9" height="38"/>
+                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="9"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="w6v-zY-4Ae" firstAttribute="centerY" secondItem="UB7-na-CfS" secondAttribute="centerY" id="1AM-nr-dbV"/>
+                    <constraint firstItem="h53-tQ-z0i" firstAttribute="leading" secondItem="OpK-Oq-mhf" secondAttribute="leading" constant="3" id="2Ns-m2-jC5"/>
+                    <constraint firstAttribute="bottom" secondItem="JDy-vV-Xza" secondAttribute="bottom" constant="5" id="90r-CH-LZX"/>
+                    <constraint firstItem="w6v-zY-4Ae" firstAttribute="leading" secondItem="UB7-na-CfS" secondAttribute="trailing" constant="1" id="DaI-Te-fCI"/>
+                    <constraint firstItem="UB7-na-CfS" firstAttribute="centerY" secondItem="JDy-vV-Xza" secondAttribute="centerY" id="I5G-MY-d1Q"/>
+                    <constraint firstAttribute="bottom" secondItem="w6v-zY-4Ae" secondAttribute="bottom" id="LZ4-Ud-dWQ"/>
+                    <constraint firstItem="UB7-na-CfS" firstAttribute="leading" secondItem="JDy-vV-Xza" secondAttribute="trailing" constant="2" id="QDK-HV-PNb"/>
+                    <constraint firstItem="h53-tQ-z0i" firstAttribute="height" secondItem="OpK-Oq-mhf" secondAttribute="height" multiplier="0.5" id="YNT-nB-2ei"/>
+                    <constraint firstItem="h53-tQ-z0i" firstAttribute="top" secondItem="OpK-Oq-mhf" secondAttribute="top" constant="3" id="adi-FC-uZe"/>
+                    <constraint firstItem="JDy-vV-Xza" firstAttribute="leading" secondItem="OpK-Oq-mhf" secondAttribute="leading" constant="10" id="pdz-Db-luH"/>
+                    <constraint firstAttribute="bottom" secondItem="UB7-na-CfS" secondAttribute="bottom" constant="5" id="rVr-N4-KMr"/>
+                    <constraint firstAttribute="trailing" secondItem="h53-tQ-z0i" secondAttribute="trailing" constant="3" id="uN4-ie-CjK"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="75" height="79"/>
+            <connections>
+                <outlet property="discountLbl" destination="JDy-vV-Xza" id="xRF-ix-l6A"/>
+                <outlet property="discountValueLbl" destination="UB7-na-CfS" id="0oc-vH-3mZ"/>
+                <outlet property="timeLbl" destination="h53-tQ-z0i" id="1X2-Xl-HFh"/>
+            </connections>
+            <point key="canvasLocation" x="155.07246376811597" y="13.392857142857142"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="JDy-vV-Xza">
+            <size key="intrinsicContentSize" width="46.5" height="14"/>
+        </designable>
+        <designable name="UB7-na-CfS">
+            <size key="intrinsicContentSize" width="11.5" height="12"/>
+        </designable>
+        <designable name="h53-tQ-z0i">
+            <size key="intrinsicContentSize" width="29.5" height="14"/>
+        </designable>
+        <designable name="w6v-zY-4Ae">
+            <size key="intrinsicContentSize" width="9" height="11"/>
+        </designable>
+    </designables>
+</document>
